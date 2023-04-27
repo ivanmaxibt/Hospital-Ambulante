@@ -1,0 +1,59 @@
+h1{
+    color:darkorange;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 400;
+    font-size: 16;
+    text-align: center;
+    text-decoration: underline;
+}
+h2{
+    color:darkblue;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 300;
+    font-size: 14;
+    text-align:left;
+    text-decoration: underline;
+}
+h3{
+    color:crimson;
+    font-family: 'Unna', serif;
+    font-weight: 400;
+    font-size: 14;
+    text-align: left;
+    text-decoration: underline;
+}
+p{
+    color:olivedrab;
+    font-family:'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 14;
+    text-align: justify;
+}
+ul li{
+    color:deepskyblue;
+    font-family:'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 14;
+}
+ol li{
+    color:chocolate;
+    font-family:'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 14;
+    list-style-type: upper-roman;
+}
+img{
+    position: relative;
+    left: 100px;
+}
+body{
+    background-color:bisque;
+}
+footer{
+    text-align: center;
+}
+
+/*font-family: 'DM Serif Display', serif;
+font-family: 'IBM Plex Serif', serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Unna', serif;*/
