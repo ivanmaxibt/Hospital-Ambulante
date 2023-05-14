@@ -1,59 +1,71 @@
 h1{
-    color:darkorange;
-    font-family: 'IBM Plex Serif', serif;
+    color:rgb(244, 227, 7);
+    font-family: 'Play', bold;
     font-weight: 400;
-    font-size: 16;
+    font-size: 48;
     text-align: center;
     text-decoration: underline;
 }
 h2{
-    color:darkblue;
-    font-family: 'DM Serif Display', serif;
+    color:black;
+    font-family: 'Play', serif;
     font-weight: 300;
-    font-size: 14;
+    font-size: 32;
     text-align:left;
     text-decoration: underline;
 }
 h3{
-    color:crimson;
-    font-family: 'Unna', serif;
+    color:#ffffff;
+    font-family: 'Play', serif;
     font-weight: 400;
-    font-size: 14;
+    font-size: 24;
     text-align: left;
     text-decoration: underline;
 }
 p{
-    color:olivedrab;
-    font-family:'Quicksand', sans-serif;
+    color:rgb(207, 43, 78);
+    font-family:'Roboto', serif;
     font-weight: 400;
-    font-size: 14;
+    font-size: 22;
     text-align: justify;
 }
 ul li{
-    color:deepskyblue;
-    font-family:'Quicksand', sans-serif;
+    color:rgb(244, 227, 7);
+    font-family:'Roboto', serif;
     font-weight: 400;
-    font-size: 14;
+    font-size: 16;
 }
 ol li{
-    color:chocolate;
-    font-family:'Quicksand', sans-serif;
+    color:rgb(244, 227, 7);
+    font-family:'Roboto', serif;
     font-weight: 400;
-    font-size: 14;
+    font-size: 16;
     list-style-type: upper-roman;
 }
 img{
-    position: relative;
-    left: 100px;
+    position: center;
+    align-content: flex-start;
+}
+header{
+        background-color: rgb(207, 43, 78);
+        text-align: center;
 }
 body{
-    background-color:bisque;
+        background-color:rgb(56, 182, 255);
+        max-width: 1200 px;
+        height: 375 px;
 }
 footer{
+    background-color: rgb(255, 218, 42);
     text-align: center;
 }
 
-/*font-family: 'DM Serif Display', serif;
-font-family: 'IBM Plex Serif', serif;
-font-family: 'Quicksand', sans-serif;
-font-family: 'Unna', serif;*/
+.ref {
+    Color:#FFFFFF;
+    font-family: 'Roboto', bold;
+    font-weight: 400;
+    font-size: 32;
+}
+
+/*font-family: 'Play', sans-serif;
+font-family: 'Roboto', sans-serif;*/
