@@ -1,0 +1,323 @@
+h1 {
+  color: black;
+  font-family: "Play", bold;
+  font-weight: 400;
+  font-size: 48;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h2 {
+  color: black;
+  font-family: "Play", serif;
+  font-weight: 300;
+  font-size: 32;
+  text-align: left;
+  text-decoration: underline;
+}
+
+h3 {
+  color: #ffffff;
+  font-family: "Play", serif;
+  font-weight: 400;
+  font-size: 24;
+  text-align: left;
+  text-decoration: underline;
+}
+
+p {
+  color: rgb(207, 43, 78);
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 22;
+  text-align: justify;
+}
+
+ul li {
+  color: rgb(244, 227, 7);
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 16;
+}
+
+ol li {
+  color: rgb(244, 227, 7);
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 16;
+  list-style-type: upper-roman;
+}
+
+img {
+  position: center;
+  align-content: space-between;
+  flex: content;
+}
+
+header {
+  background-color: rgb(207, 43, 78);
+  text-align: center;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  width: auto;
+  padding: 15px 0px 15px;
+  height: auto;
+  margin: 0px 0px 50px 0px;
+}
+
+body {
+  background-color: rgb(56, 182, 255);
+  width: auto;
+  height: auto;
+}
+
+footer {
+  background-color: rgb(255, 218, 42);
+  text-align: center;
+  width: auto;
+  padding: 15px 0px 15px;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  height: auto;
+  margin: 50px 0px 0px 0px;
+}
+
+.ref {
+  Color: #0d2c54;
+  font-family: "Roboto", bold;
+  font-weight: 400;
+  font-size: 32;
+}
+
+.container {
+  width: 75vw;
+  max-width: 1200 px;
+  min-width: 375;
+  margin: auto;
+}
+
+.box {
+  position: relative;
+  width: 350px;
+  height: 550px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 350px;
+  height: 550px;
+  background: linear-gradient(0deg, transparent, transparent, rgb(244, 227, 7), rgb(244, 227, 7), rgb(244, 227, 7));
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 350px;
+  height: 550px;
+  background: linear-gradient(0deg, transparent, transparent, rgb(244, 227, 7), rgb(244, 227, 7), rgb(244, 227, 7));
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+
+.borderLine {
+  position: absolute;
+  top: 0;
+  inset: 0;
+}
+
+.borderLine::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 350px;
+  height: 550px;
+  background: linear-gradient(0deg, transparent, transparent, rgb(207, 43, 78), rgb(207, 43, 78), rgb(207, 43, 78));
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -1.5s;
+}
+
+.borderLine::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 350px;
+  height: 550px;
+  background: linear-gradient(0deg, transparent, transparent, rgb(207, 43, 78), rgb(207, 43, 78), rgb(207, 43, 78));
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -4.5s;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.form-box {
+  position: relative;
+  width: 335px;
+  height: 535px;
+  inset: 6px;
+  background: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 8px;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.inputbox {
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+  border-bottom: 2px solid black;
+}
+
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -5px;
+}
+
+.inputbox input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: black;
+  font-family: "Play", serif;
+}
+
+.inputbox ion-icon {
+  position: absolute;
+  right: 8px;
+  color: black;
+  font-size: 1.2em;
+  top: 20px;
+}
+
+button {
+  width: 40%;
+  height: 40px;
+  border-radius: 40px;
+  background: rgb(56, 182, 255);
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+a:link {
+  color: black;
+  font-size: 18px;
+}
+
+a:visited {
+  color: black;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: rgb(56, 182, 255);
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(255, 0, 251);
+  text-decoration: underline;
+}
+
+.dropdown {
+  display: inline-block;
+  position: absolute;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: visible;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+}
+
+.dropdown-content a {
+  display: inline-block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #00A4BD;
+}
+
+.trabajos {
+  width: 50%;
+  height: 50%;
+  border-radius: 25%;
+}
+
+.logo {
+  width: 25%;
+  height: 25%;
+}
+
+.destinos {
+  width: 75%;
+  height: 75%;
+}
+
+.quehacemos {
+  width: 75%;
+  height: 75%;
+}
+
+.colaboradores {
+  width: 75%;
+  height: 75%;
+}
+
+/*font-family: 'Play', sans-serif;
+font-family: 'Roboto', sans-serif;*//*# sourceMappingURL=styles.css.map */
