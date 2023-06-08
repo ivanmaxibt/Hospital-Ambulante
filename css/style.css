@@ -93,7 +93,6 @@ footer{
     font-weight: 400;
     font-size: 32;
 }
-
 .container{
     width: 75vw;
     max-width: 1200px;
@@ -220,15 +219,16 @@ top: -5px;
     border: none;
     outline: none;
     font-size: 1em;
-    padding:0 35px 0 5px;
+    padding: 0 35px 0 5px;
     color: black;
     font-family: 'Play', serif;
+    align-items: center;
 }
 .inputbox ion-icon{
     position: absolute;
     right: 8px;
     color: black;
-    font-size: 1.2em;
+    font-size: 1.5em;
     top: 20px;
 }
 button{
@@ -239,11 +239,12 @@ button{
     border: none;
     cursor: pointer;
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 600;;
 }
 a:link {
     color: black;
-    font-size: 50px;
+    font-size: 16px;
+    font-weight: 400;
 }
 a:visited {
     color: black;
@@ -252,36 +253,36 @@ a:visited {
 a:hover {
     color: rgb(1, 255, 47);
     text-decoration: underline;
-  }
-  a:active {
+}
+a:active {
     color: rgb(255, 0, 251);
     text-decoration: underline;
-  }
+}
   
-  .dropdown {
+.dropdown {
     display: inline-block;
     position: absolute;
-  }
-  .dropdown-content {
+}
+.dropdown-content {
     display: none;
     position: absolute;
     width: 100%;
-    overflow: visible;
+    overflow: hidden;
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-  }
-  .dropdown:hover .dropdown-content {
-    display: inline-block;
-  }
-  .dropdown-content a {
-    display: inline-block;
+ }
+.dropdown:hover .dropdown-content {
+    display:block;
+}
+.dropdown-content a {
+    display:block;
     color: #000000;
     padding: 5px;
     text-decoration: none;
-  }
-  .dropdown-content a:hover {
+}
+.dropdown-content a:hover {
     color: #FFFFFF;
     background-color: rgb(56, 182, 255);
-  }  
+}  
 .loaderizq{
     width: 100px;
     height: 100px;
@@ -369,9 +370,18 @@ hr{
     background-color: rgb(244, 227, 7);
     background-image: repeating-linear-gradient(-45deg, rgb(207, 43, 78), rgba(56, 182, 255) 10px, transparent 10px, transparent 20px);
 }
+.hr2{
+    height: 20px;
+    background-color: rgba(0, 0, 0);
+    background-image: repeating-linear-gradient(-45deg, rgb(207, 43, 78), rgb(244, 227, 7) 10px, transparent 10px, transparent 20px);
+}
+.hr3{
+    height: 20px;
+    background-color: rgba(0, 0, 0);
+    background-image: repeating-linear-gradient(45deg, rgb(207, 43, 78), rgb(244, 227, 7) 10px, transparent 10px, transparent 20px);
+}
 .links{
     display: flex;
-
 }
 .insta{
     margin: auto;
@@ -385,18 +395,6 @@ hr{
 .twitter{
     margin: auto;
 }
-.carrusel {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-  }
-  
-  .carrusel-item {
-    flex-shrink: 0;
-    width: 50%;
-    height: 50%;
-    scroll-snap-align: center;
-  }
 .mn{
     width: 40px;
     height: 40px;
@@ -407,6 +405,107 @@ hr{
     font-size: 1em;
     font-weight: 100;
     margin: 8px 8px 8px 8px;
+}
+.slide {
+    position: relative;
+    box-shadow: 0px 1px 5px rgb(1, 255, 47);
+    margin-top: auto;
+}
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+.slide-item img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.slide-control {
+    background: rgb(1, 255, 47);
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+.slide-control.prev {
+    left: 2%;
+    top: 50%;
+}
+.slide-control.next {
+    right: 2%;
+    top: 50%;
+}
+.slide-control:hover {
+    background: rgb(1, 255, 47);
+    color: rgb(255, 0, 251);
+}
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3,
+#slide-4:checked ~ .control-4,
+#slide-5:checked ~ .control-5 {
+    display: block;
+}
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.slide-circulo {
+    color: rgb(255, 0, 251);
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+.slide-circulo:hover {
+    color: rgb(1, 255, 47);
+}
+#slide-1:checked ~ .control-1 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo,
+#slide-4:checked ~ .control-4 ~ .slide-indicador 
+      li:nth-child(4) .slide-circulo,
+#slide-5:checked ~ .control-5 ~ .slide-indicador 
+      li:nth-child(5) .slide-circulo {
+    color: rgb(244, 227, 7);
 }
 /*font-family: 'DM Sans', sans-serif;
 font-family: 'Play', sans-serif;*/

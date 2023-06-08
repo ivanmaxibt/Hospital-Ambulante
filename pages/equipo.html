@@ -23,7 +23,7 @@
                         <a href="../pages/contacto.html" class="ref">Contacto</a>
                         <a href="../index.html" class="ref">Inicio</a>
                         <a href="../pages/mision.html" class="ref">Misión</a>
-                        <a href="../pages/trabajosrealizados.html" class="ref">Trabajos Realizados</a>
+                        <a href="../pages/trabajosrealizados.html" class="ref">Trabajos</a>
                     </div>
                 </div>
     </header>
@@ -32,13 +32,65 @@
             <p>
                 <h1>EL EQUIPO</h1>
             </p>
-            <div class="carrusel">
-                <div class="carrusel-item"><img src="../images/romi.jpg" alt="Dra. Romina Madrid"></div>
-                <div class="carrusel-item"><img src="../images/bea.jpg" alt="Dra. Beatriz Constantino"></div>
-                <div class="carrusel-item"><img src="../images/fejo.jpg" alt="Dr. Rodrigo López"></div>
-                <div class="carrusel-item"><img src="../images/javi.jpg" alt="Javier Piñero"></div>
-                <div class="carrusel-item"><img src="../images/rodrigoyana.jpg" alt="Rodrigo Suárez y Ana Belén Nievas"></div>
-              </div>
+            <hr class="hr2">
+            <div class="slide">
+                <div class="slide-inner">
+                    <input class="slide-open" type="radio" id="slide-1" 
+                          name="slide" aria-hidden="true" hidden="" checked="checked">
+                    <div class="slide-item">
+                        <img src="../images/romi.jpg" alt="Dra. Romina Madrid">
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-2" 
+                          name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="../images/bea.jpg" alt="Dra. Beatriz Constantino">
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-3" 
+                          name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="../images/fejo.jpg" alt="Dr. Rodrigo López">
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-4" 
+                          name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="../images/javi.jpg" alt="Javier Piñero">
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-5" 
+                          name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="../images/rodrigoyana.jpg" alt="Rodrigo Suárez y Ana Belén Nievas">
+                    </div>
+                    <label for="slide-5" class="slide-control prev control-1">‹</label>
+                    <label for="slide-2" class="slide-control next control-1">›</label>
+                    <label for="slide-1" class="slide-control prev control-2">‹</label>
+                    <label for="slide-3" class="slide-control next control-2">›</label>
+                    <label for="slide-2" class="slide-control prev control-3">‹</label>
+                    <label for="slide-4" class="slide-control next control-3">›</label>
+                    <label for="slide-3" class="slide-control prev control-4">‹</label>
+                    <label for="slide-5" class="slide-control next control-4">›</label>
+                    <label for="slide-4" class="slide-control prev control-5">‹</label>
+                    <label for="slide-1" class="slide-control next control-5">›</label>
+
+                    <ol class="slide-indicador">
+                        <li>
+                            <label for="slide-1" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-2" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-3" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-4" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-5" class="slide-circulo">•</label>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <hr class="hr3">
     <div class="vc">
         <a href="#ir_arriba"><ion-icon name="logo-vue" class="vue"></ion-icon></a>
     </div>
