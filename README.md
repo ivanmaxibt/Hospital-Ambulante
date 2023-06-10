@@ -1,5 +1,5 @@
 # Hospital-Ambulante
-Proyecto sobre una página futura.
+Proyecto sobre un sitio web futuro.
 
 Mi idea inicialmente era poder colaborar con la Fundación (sin fines de lucro) de un Amigo que se dedican a llevar salud ahí dónde Nadie más llega. 
 
