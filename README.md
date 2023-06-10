@@ -8,7 +8,7 @@ Ellos poseen una página (https://hospitalambulante.org/) (era muy estática, la
 Se me ocurrió poder modificarla para hacerla más funcional, mucho mejor realizada y maquetada con lo aprendido en el curso, era un proyecto win win o ganar ganar, Ellos obtenían una mejor página y Yo ganaba experiencia y conocimiento.
 
 El sitio cuenta con cinco páginas:
-- **Index** (es la página principal, muestra información sobre la Fundación).
+- **Inicio** (es la página principal, muestra información sobre la Fundación).
 - **Contacto** (formualrio de contacto).
 - **Equipo** (miembros fundadores pero el equipo colaborador es muchísimo más grande).
 - **Misión** (aquí se manifiesta la misión, visión y valores).
