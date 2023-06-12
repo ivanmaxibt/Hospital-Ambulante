@@ -1,0 +1,157 @@
+@keyframes animate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+.box {
+	position: relative;
+	width: 350px;
+	height: 550px;
+	background: #FFFFFF;
+	border-radius: 8px;
+	overflow: hidden;
+	margin: auto;
+	&::before {
+		content: '';
+		position: absolute;
+		top: -50%;
+		left: -50%;
+		width: 350px;
+		height: 550px;
+		background: linear-gradient(0deg, transparent, transparent,rgb(244, 227, 7),rgb(244, 227, 7),rgb(244, 227, 7));
+		z-index: 1;
+		transform-origin: bottom right;
+		animation: animate 6s linear infinite;
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		top: -50%;
+		left: -50%;
+		width: 350px;
+		height: 550px;
+		background: linear-gradient(0deg, transparent, transparent,rgb(244, 227, 7),rgb(244, 227, 7),rgb(244, 227, 7));
+		z-index: 1;
+		transform-origin: bottom right;
+		animation: animate 6s linear infinite;
+		animation-delay: -3s;
+	}
+}
+.borderLine {
+	position: absolute;
+	top: 0;
+	inset: 0;
+	&::before {
+		content: '';
+		position: absolute;
+		top: -50%;
+		left: -50%;
+		width: 350px;
+		height: 550px;
+		background: linear-gradient(0deg, transparent, transparent,rgb(207, 43, 78), rgb(207, 43, 78), rgb(207, 43, 78));
+		z-index: 1;
+		transform-origin: bottom right;
+		animation: animate 6s linear infinite;
+		animation-delay: -1.5s;
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		top: -50%;
+		left: -50%;
+		width: 350px;
+		height: 550px;
+		background: linear-gradient(0deg,transparent, transparent, rgb(207, 43, 78),rgb(207, 43, 78), rgb(207, 43, 78));
+		z-index: 1;
+		transform-origin: bottom right;
+		animation: animate 6s linear infinite;
+		animation-delay: -4.5s;
+	}
+}
+.form-box {
+	position: relative;
+	width: 335px;
+	height: 535px;
+	inset: 6px;
+	background: #FFFFFF;
+	border: 2px solid #FFFFFF;
+	border-radius: 8px;
+	backdrop-filter: blur(15px);
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+}
+.inputbox {
+	position: relative;
+	margin: 30px 0;
+	width: 310px;
+	border-bottom: 2px solid black;
+	label {
+		position: absolute;
+		top: 50%;
+		left: 5px;
+		transform: translateY(-50%);
+		color: $color_1;
+		font-size: 1em;
+		pointer-events: none;
+		transition: .5s;
+	}
+	input {
+		width: 100%;
+		height: 50px;
+		background: transparent;
+		border: none;
+		outline: none;
+		font-size: 1em;
+		padding: 0 35px 0 5px;
+		color: $color_1;
+		font-family: $font-family_2;
+		align-items: center;
+	}
+	ion-icon {
+		position: absolute;
+		right: 8px;
+		color: $color_1;
+		font-size: 1.5em;
+		top: 20px;
+	}
+}
+input {
+	&:focus {
+		~ {
+			label {
+				top: -5px;
+			}
+		}
+	}
+	&:valid {
+		~ {
+			label {
+				top: -5px;
+			}
+		}
+	}
+}
+button {
+	width: 40%;
+	height: 40px;
+	border-radius: 40px;
+	background: rgb(56, 182, 255);
+	border: none;
+	cursor: pointer;
+	font-size: 1em;
+	font-weight: 600;
+}

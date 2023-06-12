@@ -1,0 +1,20 @@
+hr {
+	height: 20px;
+	background-color: $background-color_4;
+	background-image: repeating-linear-gradient(45deg, rgb(207, 43, 78), rgba(56, 182, 255) 10px, transparent 10px, transparent 20px);
+}
+.hr1 {
+	height: 20px;
+	background-color: $background-color_4;
+	background-image: repeating-linear-gradient(-45deg, rgb(207, 43, 78), rgba(56, 182, 255) 10px, transparent 10px, transparent 20px);
+}
+.hr2 {
+	height: 20px;
+	background-color: $background-color_5;
+	background-image: repeating-linear-gradient(-45deg, rgb(207, 43, 78), rgb(244, 227, 7) 10px, transparent 10px, transparent 20px);
+}
+.hr3 {
+	height: 20px;
+	background-color: $background-color_5;
+	background-image: repeating-linear-gradient(45deg, rgb(207, 43, 78), rgb(244, 227, 7) 10px, transparent 10px, transparent 20px);
+}

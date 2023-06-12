@@ -1,0 +1,45 @@
+footer {
+	background-color: $background-color_3;
+	width: auto;
+	padding: 15px 0px 15px;
+	border-top-right-radius: 100px;
+	border-top-left-radius: 100px;
+	height: auto;
+	margin: 50px 0px 0px 0px;
+}
+.derechos {
+	font-family: $font-family_3;
+	font-weight: 700;
+	font-size: 48;
+	font-style: italic;
+	color: $color_3;
+	text-align: center;
+}
+.vc {
+	text-align: center;
+}
+.vue {
+	content: center;
+	rotate: 180deg;
+}
+.ref {
+	color: $color_6;
+	font-family: $font-family_1;
+	font-weight: 400;
+	font-size: 32;
+}
+.links {
+	display: flex;
+}
+.insta {
+	margin: auto;
+}
+.face {
+	margin: auto;
+}
+.tube {
+	margin: auto;
+}
+.twitter {
+	margin: auto;
+}
